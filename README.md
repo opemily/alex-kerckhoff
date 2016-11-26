@@ -1,6 +1,6 @@
 # Alex Kerckhoff Portfolio Site
 
-A musician portfolio site for Alex Kerckhoff written by Emily Oppenheimer. The site will hosted at [AlexKerckhoff.com](http://AlexKerckhoff.com)
+A musician portfolio site for Alex Kerckhoff built by Emily Oppenheimer. The site will hosted at [AlexKerckhoff.com](http://AlexKerckhoff.com)
 
 ## Technologies Used
 * HTML 5
@@ -15,6 +15,7 @@ A musician portfolio site for Alex Kerckhoff written by Emily Oppenheimer. The s
 
 
 ### Credits for resources used
+* Yeoman Compiler- [Generator Gulp Angular](https://github.com/Swiip/generator-gulp-angular)
 * Background Image- [Old Burlap Canvas](http://www.bigbull.com.mx/old-burlap-canvas)
 * Fonts
   * WC Mano Negra Bta [WC Fonts](http://www.wcfonts.com/?Free_Fonts:WC_ManoNegra_Bta)
