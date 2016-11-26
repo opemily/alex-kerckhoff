@@ -1,0 +1,57 @@
+@font-face {
+  font-family: 'Mano Negra';
+  src: url("/assets/fonts/wc_mano_negra/WCManoNegra.ttf");
+}
+
+@font-face {
+  font-family: 'Mano Negra';
+  src: url("/assets/fonts/wc_mano_negra/WCManoNegraBold.ttf");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'Cambria';
+  src: url("/assets/fonts/cambria/Cambria.ttf");
+}
+
+@font-face {
+  font-family: 'Cambria';
+  src: url("/assets/fonts/cambria/CambriaBold.ttf");
+  font-weight: bold;
+}
+
+$red: rgb(146,26,0);
+
+.title {
+  color: $red;
+  font-family: 'Mano Negra';
+  font-size: 48px;
+  font-weight: bold;
+
+}
+.active {
+  text-decoration: underline;
+}
+.navbar-nav {
+  float: right;
+}
+
+.navbar-nav li a:hover{
+  background-color: transparent;
+
+}
+
+.navbar-nav li a:active{
+  text-decoration: underline;
+
+}
+
+.route {
+  display: inline-block;
+  padding: 10px 15px;
+}
+
+.route-link {
+  font-size: 28px;
+  text-decoration: none;
+}
