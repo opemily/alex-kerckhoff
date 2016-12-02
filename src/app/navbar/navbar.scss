@@ -1,57 +1,209 @@
-@font-face {
-  font-family: 'Mano Negra';
-  src: url("/assets/fonts/wc_mano_negra/WCManoNegra.ttf");
+// Navbar 
+
+.navbar-header {
+
+  .navbar-title {
+    color: $red;
+    font-family: 'Mano Negra';
+    font-size: 48px;
+    font-weight: bold;
+  }
+
+  .navbar-toggle .icon-bar {
+    background-color: $red;
+    height: 3px;
+  }
 }
 
-@font-face {
-  font-family: 'Mano Negra';
-  src: url("/assets/fonts/wc_mano_negra/WCManoNegraBold.ttf");
-  font-weight: bold;
-}
-
-@font-face {
-  font-family: 'Cambria';
-  src: url("/assets/fonts/cambria/Cambria.ttf");
-}
-
-@font-face {
-  font-family: 'Cambria';
-  src: url("/assets/fonts/cambria/CambriaBold.ttf");
-  font-weight: bold;
-}
-
-$red: rgb(146,26,0);
-
-.title {
-  color: $red;
-  font-family: 'Mano Negra';
-  font-size: 48px;
-  font-weight: bold;
-
-}
-.active {
-  text-decoration: underline;
-}
 .navbar-nav {
-  float: right;
+
+  .active {
+    text-decoration: underline;
+  }
+
+  li a:hover, li a:focus {
+    background-color: transparent;
+    color: $red;
+    text-decoration: none;
+  }
+
+  .pocket-watch {
+    height: 52px;
+    padding-bottom: 20px;
+    width: 40px;
+  }
+
+  .route {
+    display: inline-block;
+    padding: 10px;
+  }
+
+  .route-link {
+    color: $red;
+    font: bold 28px 'Caladea', Georgia, Serif;
+    text-decoration: none;
+    text-transform: capitalize;
+  }
 }
 
-.navbar-nav li a:hover{
-  background-color: transparent;
+// Navbar Responsiveness
+
+@media screen and (max-width: 1200px) and (min-width: 768px) {
+
+  .container > .navbar-header {
+    margin: 0, -15px;
+  }
+
+  .navbar-collapse {
+    padding: 0;
+  }
+
+  .navbar-header .navbar-title {
+    display: inline-block;
+    font-size: 36px;
+    padding-top: 10px;
+  }
+
+  .navbar-nav .route-link {
+    font-size: 21px;
+  }
+}
+
+@media screen and (max-width: 992px) and (min-width: 768px) {
+
+  .navbar-header .navbar-title {
+    font-size: 24px;
+  }
+
+  .navbar-nav {
+    position: relative;
+  }
+
+  .navbar-nav .route {
+    padding: 0;
+  }
+
+  .navbar-nav .route-link {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  .container > .navbar-header {
+    margin-left: 0px;
+  }
+
+  div[ui-view]{
+   position: relative;
+   top: 70px;
+  }
+
+  .navbar {
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+  }
+  
+  .navbar-nav {
+    position: relative;
+    background: rgba(120,112,94,.8);
+    border: 1px solid rgba(120,112,94,.8);
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    -webkit-box-shadow: -18px 21px 20px 3px rgba(77,73,64,1);
+    -moz-box-shadow: -18px 21px 20px 3px rgba(77,73,64,1);
+    box-shadow: -18px 21px 20px 3px rgba(77,73,64,1);
+    float: right;
+    margin: 19px auto 0 auto;
+    width: 33.3%;
+  }
+
+  .navbar-nav:after, .navbar-nav:before {
+    border: solid transparent;
+    bottom: 100%;
+    content: " ";
+    height: 0;
+    left: 90%;
+    pointer-events: none;
+    position: absolute;
+    width: 0; 
+  }
+
+  .navbar-nav:before {
+    border-color: rgba(120, 112, 94, 0);
+    border-bottom-color: rgba(120,112,94, .8);
+    border-width: 19px;
+    margin-left: -19px;
+  }
+
+  .navbar-nav:after {
+    border-color: rgba(120, 112, 94, 0);
+    border-bottom-color: rgba(120,112,94,.8);
+    border-width: 13px;
+    margin-left: -13px;
+  }
+  
+  .navbar-nav li {
+    display: block;
+    border-bottom: 1px solid rgba(77,73,64,1);
+  }
+
+  .navbar-nav > li {
+    float: none;
+  }
+
+  .navbar-nav li:last-child {
+    border-bottom: none;
+  }
+
+  .navbar-nav .route {
+    margin: 0 auto;
+  }
+
+  .navbar-nav .route-link {
+    margin-left: 30px;
+    text-align: center;
+  }
 
 }
 
-.navbar-nav li a:active{
-  text-decoration: underline;
+@media screen and (max-width: 670px) {
 
+  .navbar-nav .route-link {
+    margin-left: 20px;
+
+  }
 }
 
-.route {
-  display: inline-block;
-  padding: 10px 15px;
+@media screen and (max-width: 590px) {
+
+  .navbar-nav {
+    width: 50%;
+  }
+
+  .navbar-nav .route-link {
+    margin-left: 10px;
+    text-align: left;
+  }
 }
 
-.route-link {
-  font-size: 28px;
-  text-decoration: none;
+@media screen and (max-width: 480px) {
+
+  .navbar-nav {
+    background-color: rgb(120,112,94);
+    width: 100%;
+  }
+
+  .navbar-nav .route-link {
+    margin-left: 30px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 390px) {
+
+  .navbar-header .navbar-title {
+    font-size: 36px;
+  }
 }

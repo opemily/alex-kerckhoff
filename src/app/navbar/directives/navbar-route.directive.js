@@ -7,7 +7,7 @@
      return {
       restrict: 'A',
       templateUrl: 'app/navbar/partials/navbar-route.partial.html',
-      controller: 'NavbarCtrl as ctrl',
+      controller: 'NavbarController as ctrl',
       bindToController: true
     };
   });

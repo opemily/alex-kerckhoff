@@ -10,7 +10,8 @@
     "angular-toastr": "~1.5.0",
     "animate.css": "~3.4.0",
     "angular": "~1.5.3",
-    "packery": "^2.1.1"
+    "packery": "^2.1.1",
+    "csshake": "^1.5.1"
   },
   "devDependencies": {
     "angular-mocks": "~1.5.3"
@@ -24,6 +25,14 @@
         "assets/fonts/bootstrap/glyphicons-halflings-regular.ttf",
         "assets/fonts/bootstrap/glyphicons-halflings-regular.woff",
         "assets/fonts/bootstrap/glyphicons-halflings-regular.woff2"
+      ]
+    },
+    "packery": {
+      "main": [
+        "js/rect.js",
+        "js/packer.js",
+        "js/item.js",
+        "js/packery.js"
       ]
     }
   },

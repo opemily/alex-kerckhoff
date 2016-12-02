@@ -1,5 +1,5 @@
   <div class="route" ui-sref-active="active">
+    <img class="pocket-watch" ng-class="{'shake-rotate shake-constant': hovered}"  src="/assets/images/icons/pocketwatch.svg" alt="pocketwatch">
 
-   <a ui-sref="{{route.name}}" class="route-link">{{route.name}} </a>
-
+     <a class="route-link" ng-mouseover="hovered = true" ng-mouseout="hovered = false" ui-sref="{{route.name}}">{{route.name}} </a>
   </div>

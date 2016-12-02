@@ -19,7 +19,7 @@
         .state('shows', {
           url:'/shows',
           templateUrl:'app/shows/partials/shows.partial.html',
-          controller: 'ShowController as ctrl'
+          controller: 'ShowsController as ctrl'
         })
         .state('gallery', {
           url: '/gallery',

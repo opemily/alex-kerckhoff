@@ -7,8 +7,9 @@
      return {
       restrict: 'E',
       templateUrl: 'app/navbar/partials/navbar.partial.html',
-      controller: 'NavbarCtrl as ctrl',
-      bindToController: true
+      controller: 'NavbarController as ctrl',
+      bindToController: true,
+      scope: true
     };
   });
 

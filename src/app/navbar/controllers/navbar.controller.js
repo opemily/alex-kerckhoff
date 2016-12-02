@@ -3,7 +3,7 @@
 
     angular
     .module('alex')
-    .controller('NavbarCtrl', function ($state) {
+    .controller('NavbarController', function ($state) {
         var self = this;
         
         self.routes = $state.get();
