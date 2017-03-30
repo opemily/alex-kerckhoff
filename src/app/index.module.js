@@ -2,6 +2,6 @@
   'use strict';
 
   angular
-    .module('alex', ['ngAnimate', 'ngResource', 'ui.router', 'ui.bootstrap']);
+    .module('alex', ['btford.markdown','ngSanitize','contentful', 'ngAnimate', 'ngResource', 'ui.router', 'ui.bootstrap']);
 
 })();

@@ -5,7 +5,7 @@
     .module('alex')
     .directive('navbarRoute', function () {
      return {
-      restrict: 'A',
+      restrict: 'EA',
       templateUrl: 'app/navbar/partials/navbar-route.partial.html',
       controller: 'NavbarController as ctrl',
       bindToController: true

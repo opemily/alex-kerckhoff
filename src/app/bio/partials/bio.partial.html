@@ -1,1 +1,10 @@
-<h1> I am the Biography Page </h1>
+<div class="container biography">
+  <div class="row">
+    <div class="col-sm-6 col-sm-push-6">
+        <img class="bioImage center-block" src="{{ctrl.bioImage}}" alt="{{ctrl.altText}}">
+    </div> <!-- image panel -->
+    <div class="col-sm-6 col-sm-pull-6 ">
+      <p class="bioText" btf-markdown="ctrl.bioText"></p>
+    </div> <!-- bio panel -->
+  </div>
+</div> <!-- .container -->

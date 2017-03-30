@@ -2,6 +2,9 @@
   'use strict';
 
   angular
-    .module('alex');
+    .module('alex')
+    .run(function(){
+
+    });
 
 })();

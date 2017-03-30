@@ -1,1 +1,14 @@
-<h1> I am the Shows Page</h1>
+ <div class="container shows">
+  <div>
+    <uib-datepicker ng-model="ctrl.today" max-mode="day" show-weeks="false"></uib-datepicker>
+  </div>
+
+  <div>
+    <h3> Upcoming Shows </h3>
+    <ul ng-if="!ctrl.noUpcomingEvents">
+      <li event-item ng-repeat="event in ctrl.eventList"></li>
+    </ul>
+    <p ng-if="ctrl.noUpcomingEvents"> There are no shows currently scheduled at this point. Come back soon!</p>
+  </div>
+   
+ </div> <!-- .container -->

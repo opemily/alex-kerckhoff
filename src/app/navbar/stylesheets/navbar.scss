@@ -1,12 +1,9 @@
 // Navbar 
 
 .navbar-header {
-
   .navbar-title {
     color: $red;
-    font-family: 'Mano Negra';
-    font-size: 48px;
-    font-weight: bold;
+    font:  bold 48px 'Mano Negra';
   }
 
   .navbar-toggle .icon-bar {
@@ -16,7 +13,6 @@
 }
 
 .navbar-nav {
-
   .active {
     text-decoration: underline;
   }
@@ -28,7 +24,7 @@
   }
 
   .pocket-watch {
-    height: 52px;
+    height: 55px;
     padding-bottom: 20px;
     width: 40px;
   }
@@ -40,7 +36,7 @@
 
   .route-link {
     color: $red;
-    font: bold 28px 'Caladea', Georgia, Serif;
+    font: bold 24px 'Caladea', Georgia, Serif;
     text-decoration: none;
     text-transform: capitalize;
   }
@@ -48,8 +44,7 @@
 
 // Navbar Responsiveness
 
-@media screen and (max-width: 1200px) and (min-width: 768px) {
-
+@media screen and (max-width: 1200px) and (min-width: 767px) {
   .container > .navbar-header {
     margin: 0, -15px;
   }
@@ -58,38 +53,50 @@
     padding: 0;
   }
 
-  .navbar-header .navbar-title {
-    display: inline-block;
-    font-size: 36px;
-    padding-top: 10px;
-  }
-
-  .navbar-nav .route-link {
-    font-size: 21px;
-  }
-}
-
-@media screen and (max-width: 992px) and (min-width: 768px) {
-
-  .navbar-header .navbar-title {
-    font-size: 24px;
-  }
+  .navbar-header {
+    .navbar-title {
+      display: inline-block;
+      font-size: 36px;
+      padding-top: 10px;
+    }
+  } 
 
   .navbar-nav {
-    position: relative;
-  }
+    .pocket-watch {
+      height: 48.75px;
+      padding-bottom: 15px;
+      width: 35px;
+    }
 
-  .navbar-nav .route {
-    padding: 0;
-  }
+    .route {
+      padding: 10px 5px 0;
+    }
 
-  .navbar-nav .route-link {
-    font-size: 18px;
+    .route-link {
+    font-size: 24px;
+    } 
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 990px) and (min-width: 767px) {
+  .navbar-header {
+    .navbar-title {
+      font-size: 28px;
+    }
+  } 
 
+  .navbar-nav {
+    .route {
+      padding: 5px 0 0;
+    }
+
+    .route-link {
+      font-size: 18px;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
   .container > .navbar-header {
     margin-left: 0px;
   }
@@ -104,7 +111,7 @@
     width: 100%;
     z-index: 1;
   }
-  
+
   .navbar-nav {
     position: relative;
     background: rgba(120,112,94,.8);
@@ -117,9 +124,27 @@
     float: right;
     margin: 19px auto 0 auto;
     width: 33.3%;
+
+    li {
+      display: block;
+      border-bottom: 1px solid rgba(77,73,64,1);
+    }
+
+     li:last-child {
+      border-bottom: none;
+    }
+
+    .route {
+      margin: 0 auto;
+    }
+
+    .route-link {
+      margin-left: 30px;
+      text-align: center;
+    }
   }
 
-  .navbar-nav:after, .navbar-nav:before {
+   .navbar-nav:after, .navbar-nav:before {
     border: solid transparent;
     bottom: 100%;
     content: " ";
@@ -143,67 +168,47 @@
     border-width: 13px;
     margin-left: -13px;
   }
-  
-  .navbar-nav li {
-    display: block;
-    border-bottom: 1px solid rgba(77,73,64,1);
-  }
 
   .navbar-nav > li {
     float: none;
-  }
-
-  .navbar-nav li:last-child {
-    border-bottom: none;
-  }
-
-  .navbar-nav .route {
-    margin: 0 auto;
-  }
-
-  .navbar-nav .route-link {
-    margin-left: 30px;
-    text-align: center;
-  }
-
+  } 
 }
 
 @media screen and (max-width: 670px) {
-
-  .navbar-nav .route-link {
-    margin-left: 20px;
-
+  .navbar-nav {
+    .route-link {
+      margin-left: 20px;
+    } 
   }
 }
 
 @media screen and (max-width: 590px) {
-
   .navbar-nav {
     width: 50%;
-  }
 
-  .navbar-nav .route-link {
-    margin-left: 10px;
-    text-align: left;
+    .route-link {
+      margin-left: 10px;
+      text-align: left;
+    }
   }
 }
 
 @media screen and (max-width: 480px) {
-
   .navbar-nav {
     background-color: rgb(120,112,94);
     width: 100%;
-  }
 
-  .navbar-nav .route-link {
-    margin-left: 30px;
-    text-align: center;
+    .route-link {
+      margin-left: 30px;
+      text-align: center;
+    } 
   }
 }
 
 @media screen and (max-width: 390px) {
-
-  .navbar-header .navbar-title {
-    font-size: 36px;
-  }
+  .navbar-header {
+    .navbar-title {
+      font-size: 36px;
+    }
+  } 
 }
